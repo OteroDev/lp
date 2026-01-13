@@ -1,0 +1,737 @@
+@use '../sass/colors' as *;
+@use '../sass/responsive' as *;
+
+
+// Typography of project
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "Futurism";
+  src: url("../font/Futurism.otf");
+}
+
+@font-face {
+  font-family: "Nebula";
+  src: url("../font/Nebula-Regular.otf");
+}
+
+@mixin typeface-title() {
+  font-family: "Nebula", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@mixin typeface-1($size, $device: desktop) {
+
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  @if $size == hbig and $device == desktop {
+    font-size: 80px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == mobile {
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == smallmobile {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  
+  @if $size == h0 and $device == desktop {
+    font-size: 88px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == mobile {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == smallmobile {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+
+  @if $size == h1 and $device == desktop {
+    font-size: 80px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 52px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == smallmobile {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h2 and $device == desktop {
+
+    font-size: 72px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == smallmobile {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h3 and $device == desktop {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == smallmobile {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h4 and $device == desktop {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == smallmobile {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h5 and $device == desktop {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 200;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 200;
+  }
+
+  @else if $size == h6 and $device == desktop {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+
+  @else if $size == h7 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h7 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+
+  @else if $size == h8 and $device == desktop {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h8 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  @if $size == p1 and $device == desktop {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+  } @else if $size == p1 and $device == smallmobile {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  } 
+  
+  @else if $size == p2 and $device == desktop {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  } 
+  
+  @else if $size == p3 and $device == desktop {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  } @else if $size == p3 and $device == smallmobile {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  @else if $size == p4 and $device == desktop {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+  } @else if $size == p4 and $device == mobile {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+  }
+
+  @else if $size == p5 and $device == desktop {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 200;
+  } @else if $size == p5 and $device == mobile {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 200;
+  }
+}
+
+.h0{
+  @include typeface-1(h0, desktop);
+  letter-spacing: 20px;
+  
+  @include responsive(s) {
+    letter-spacing: 10px;
+    @include typeface-1(h0, mobile);
+  }
+
+  @include responsive(xs) {
+    letter-spacing: 8px;
+    @include typeface-1(h0, smallmobile);
+  }
+}
+
+.h0-title{
+  letter-spacing: 18px;
+
+  @include typeface-1(h0, desktop);
+  @include typeface-title();
+
+  @include responsive(s) {
+    letter-spacing: 4px;
+    @include typeface-1(h0, mobile);
+    @include typeface-title();
+  }
+
+  @include responsive(xs) {
+    letter-spacing: 1px;
+    @include typeface-1(h0, smallmobile);
+    @include typeface-title();
+  }
+
+}
+
+h1 {
+  color: $white-dark;
+  z-index: 5;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h1, smallmobile);
+  }
+}
+
+.title-hero{
+  color: $white-dark;
+  z-index: 5;
+  letter-spacing: 4px;
+  
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h1, smallmobile);
+  }
+  
+}
+
+h2 {
+  color: $white-dark;
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h2, smallmobile);
+  }
+}
+
+h3 {
+  color: $white-dark;
+  @include typeface-1(h3, desktop);
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h3, smallmobile);
+  }
+}
+
+h4 {
+  color: $white-dark;
+  @include typeface-1(h4, desktop);
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h4, smallmobile);
+  }
+}
+
+h5 {
+  color: $white-dark;
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+h6 {
+  color: $white-dark;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+}
+
+.h7 {
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+}
+
+.h8 {
+  @include typeface-1(h8, desktop);
+  @include responsive(s) {
+    @include typeface-1(h8, mobile);
+  }
+}
+
+p {
+  letter-spacing: 0px;
+  color: $gray-7;
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+  }
+}
+
+.uppercase{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.p1 {
+  @include typeface-2(p1, desktop);
+  @include responsive(s) {
+    @include typeface-2(p1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p1, smallmobile);
+  }
+}
+
+.p2 {
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.p3 {
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+}
+
+.p4 {
+  @include typeface-2(p4, desktop);
+  @include responsive(s) {
+    @include typeface-2(p4, mobile);
+  }
+}
+
+.p5 {
+
+  @include typeface-2(p5, desktop);
+  @include responsive(s) {
+    @include typeface-2(p5, mobile);
+  }
+}
+
+.p-title{
+  font-size: 18px;
+
+  @include responsive(s){
+    font-size: 16px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: $white-dark;
+}
+
+span{
+  display: inline-block;
+}
+
+.letter-h1{
+  color: $white-normal;
+  letter-spacing: 1px;
+  text-transform: none;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+strong {
+  color: $black-dark;
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+b{
+  color: $gray-2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.h-xl{
+  color: $white-dark;
+  font-size: 240px;
+
+  @include typeface-1(h0, desktop);
+  
+  @include responsive(s) {
+    font-size: 144px;
+    @include typeface-1(h0, mobile);
+  }
+}
+
+.h-l{
+  color: $white-dark;
+  font-size: 144px;
+  @include typeface-1(h0, desktop);
+  
+  @include responsive(s) {
+    font-size: 96px;
+    @include typeface-1(h0, mobile);
+  }
+}
+
+.hbig{
+  @include typeface-1(hbig, desktop);
+  @include responsive(s) {
+    @include typeface-1(hbig, mobile);
+  }
+}
+
+
+.text-shadow{
+  text-shadow: 0 2px 18px rgba(0,0,0,0.7);
+}
+
+.text-shadow-small{
+  text-shadow: 0 0px 8px rgba(0,0,0,0.7);
+}
+
+.color-gray{
+  color: $gray-5;
+}
+
+.color-red{
+  color: $red-normal;
+}
+
+.color-green{
+  color: $green-normal;
+}
+
+.color-yellow{
+  color: $yellow-normal;
+}
+
+.bg-red{
+  background-color: $red-normal;
+}
+
+.bg-green{
+  background-color: $green-normal;
+}
+
+.bg-yellow{
+  background-color: $yellow-normal;
+}
+
+.color-white{
+  color: $white-light;
+}
+
+.color-primary{
+  color: $primary-normal;
+}
+
+.color-gradient{
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(207, 218, 240, 1) 8.12%, rgba(106, 113, 127, 1) 92.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-gradient2{
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(207, 218, 240, 1) 0.95%, rgba(106, 113, 127, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-animation{
+  display: inline-block;
+  background: linear-gradient(95deg, rgba(232, 240, 255, 0.99) 0%, rgba(106, 113, 127, 0.0) 50%, rgba(106, 113, 127, 0.0) 55%, rgba(232, 240, 255, 0.99) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  animation: text-gradient-animation 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes text-gradient-animation{
+  0%{
+    background-position: 0% 100%;
+  }
+  100%{
+    background-position: 100% 0%;
+  }
+}
+
+
+.text-gradient-animation-reverse{
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(189, 196, 208, 0.00) 2.7%, rgba(128, 138, 159, 0.99) 50.47%, rgba(178, 184, 197, 0.00) 98.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  animation: text-gradient-animation-reverse 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes text-gradient-animation-reverse{
+  0%{
+    background-position: -100% 100%;
+  }
+  100%{
+    background-position: 200% 0%;
+  }
+}
+
+.text-spacing-animation{
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(189, 196, 208, 0.7) 2.7%, rgba(128, 138, 159, 0.99) 50.47%, rgba(178, 184, 197, 0.7) 98.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  animation: text-spacing-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes text-spacing-animation{
+  0%{
+    letter-spacing: 0px;
+  }
+  100%{
+    letter-spacing: 6px;
+  }
+}
+
+.text-blink-animation{
+  display: inline-block;
+  color: rgba(128, 138, 159, 0.99);
+
+  animation: text-blink-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-blink-animation{
+  0%,20%{
+    color: rgba(128, 138, 159, 0.0);
+    transform: scale(1) rotate(40deg) translate3d(0,40px,0);
+  }
+  50%,100%{
+    color: rgba(128, 138, 159, 0.9);
+    transform: scale(1.8) rotate(-5deg) translate3d(0,0,0);
+  }
+}
+
+.bg-gradient{
+  background: linear-gradient(224.78deg, $primary-dark 8.12%, $secondary-dark 92.21%);
+}
+
+
+
+/////////////////////////////////////////////////
+
+.label-text-green{
+  background-color: rgba(11, 176, 123, 0.2);
+  color: rgba(11, 176, 123, 0.99);
+
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 24px;
+
+  border: 2px solid rgba(11, 176, 123, 0.1);
+  transition: .7s ease;
+
+  &:hover{
+    border: 2px solid rgba(11, 176, 123, 0.7);
+  }
+}
+
+.label-text-blue{
+  background-color: rgba(27, 105, 210, 0.2);
+  color: rgba(27, 105, 210, 0.99);
+
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 24px;
+
+  border: 2px solid rgba(27, 105, 210, 0.1);
+  transition: .7s ease;
+
+  &:hover{
+    border: 2px solid rgba(27, 105, 210, 0.5);
+  }
+}
+
+.label-text-black{
+  background-color: rgba(2, 2, 9, 0.4);
+  color: rgba(232, 240, 255, 1);
+
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 24px;
+
+  border: 2px solid rgba(232, 240, 255, 0.05);
+  transition: .7s ease;
+
+  &:hover{
+    border: 2px solid rgba(232, 240, 255, 0.3);
+  }
+}
+
+
+.label-transparent-white{
+  display: inline-block;
+  background: rgba(232, 240, 255, 0.9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 2px;
+  transition: 1s ease;
+
+  padding: 10px 24px;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+
+    background: linear-gradient(90deg, rgba(207, 218, 240, 0.00) 0%, rgba(207, 218, 240, 0.99) 50%, rgba(207, 218, 240, 0.00) 100%);
+    background-size: 200%;
+
+    animation: label-transparent-white 2s linear infinite;
+
+    transition: 1s ease;
+  }
+
+  &:hover{
+    letter-spacing: 4px;
+  }
+}
+
+@keyframes label-transparent-white{
+  0%{
+    background-position: 0 center;
+  }
+  100%{
+    background-position: 200% center;
+  }
+}
+
+
+

@@ -1,0 +1,96 @@
+@use '../sass/responsive' as *;
+@use '../sass/colors' as *;
+
+
+////////////// SCREEN LOADING //////////////
+.screen-loading{
+    width: 100%;
+    height: 100vh;
+
+    background-color: $black-dark;
+    filter: blur(0.2px);
+
+    z-index: 999;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
+}
+
+.loader{
+    animation: loader 4s ease forwards;
+}
+
+@keyframes loader{
+    0%{
+        //transform: rotate(1080deg);
+        filter: blur(24px);
+        opacity: 0;
+    }
+    20%{
+        //transform: rotate(1080deg);
+        filter: blur(0px);
+        opacity: 1;
+    }
+    80%{
+        //transform: rotate(0deg);
+        filter: blur(0px);
+        opacity: 1;
+    }
+    100%{
+        //transform: rotate(0deg);
+        opacity: 0;
+        filter: blur(24px);
+    }
+}
+
+
+
+.abstract{
+    animation: abstract 16s ease-in-out infinite;
+}
+
+.svg-abstract{
+    position: absolute;
+    top: -20%;
+    left: 0;
+
+    @include responsive(l){
+        top: 5%;
+        left: 0;
+    }
+
+    @include responsive(m){
+        top: 10%;
+        left: 0;
+    }
+
+    @include responsive(s){
+        top: 5%;
+        left: 0;
+    }
+}
+
+@keyframes abstract{
+    0%{
+        d: path("M-118 725C300 560 520.475 676.889 788 702C1274 747.617 712.324 193.19 524 664C324 1164 2442 574 2096 290C1704.37 -31.457 1912 1154 2648 523"); /**/
+    }
+    25%{
+        d: path("M-118 725C300 560 536.475 576.889 804 602C1912 706 524 1171.08 524 664C524 44 2832 828 2096 290C1672.39 -19.652 1912 1154 2648 523"); /**/
+    }
+    50%{
+        d: path("M-118 725C300 560 553.683 927.884 790 800C1762 274 220.903 409.449 690 602C1618 982.919 1618 1010 1724 492C1774.49 245.256 2134 858 2648 523"); /**/
+    }
+    75%{
+        d: path("M-118 724.999C300 560 476 820 792 650C1418.75 312.825 1352 510 1170 782C894.996 1192.99 1578 1078 1684 560C1734.49 313.256 2134 857.999 2648 523"); /**/
+    }
+    100%{
+        d: path("M-118 725C300 560 520.475 676.889 788 702C1274 747.617 712.324 193.19 524 664C324 1164 2442 574 2096 290C1704.37 -31.457 1912 1154 2648 523"); /**/
+    }
+}

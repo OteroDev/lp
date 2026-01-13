@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" data-inject-url="https://www.infusionpush.com.br.nyousefali.com.br/svg/icon-asterisco.svg" class="icon icon-white" loading="lazy">
+<rect x="27.4445" y="6.55556" width="1.11111" height="43.3333" rx="0.555556" stroke="url(#paint0_linear_198_241--inject-11)" stroke-width="1.11111"></rect>
+<rect x="8.7589" y="18.0189" width="1.11111" height="43.3333" rx="0.555556" transform="rotate(-60 8.7589 18.0189)" stroke="url(#paint1_linear_198_241--inject-11)" stroke-width="1.11111"></rect>
+<rect x="46.6856" y="16.7589" width="1.11111" height="43.3333" rx="0.555556" transform="rotate(60 46.6856 16.7589)" stroke="url(#paint2_linear_198_241--inject-11)" stroke-width="1.11111"></rect>
+<defs>
+<linearGradient id="paint0_linear_198_241--inject-11" x1="28" y1="6" x2="28" y2="50.4444" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_198_241--inject-11" x1="9.11111" y1="18.2222" x2="9.11111" y2="62.6667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+<linearGradient id="paint2_linear_198_241--inject-11" x1="48" y1="16" x2="48" y2="60.4444" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+</defs>
+</svg>

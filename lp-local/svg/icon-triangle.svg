@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" data-inject-url="https://www.infusionpush.com.br.nyousefali.com.br/svg/icon-triangle.svg" class="icon-s icon-white" loading="lazy">
+<g clip-path="url(#clip0_198_13--inject-17)">
+<path d="M27.6299 8.56348C28.013 7.88769 28.987 7.88768 29.3701 8.56348L48.8877 43.0068C49.2654 43.6735 48.7838 44.5 48.0176 44.5H8.98242C8.2162 44.5 7.73455 43.6735 8.1123 43.0068L27.6299 8.56348Z" stroke="url(#paint0_linear_198_13--inject-17)" stroke-width="2"></path>
+</g>
+<defs>
+<linearGradient id="paint0_linear_198_13--inject-17" x1="28.5" y1="5" x2="28.5" y2="59" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+<clipPath id="clip0_198_13--inject-17">
+<rect width="56" height="56" fill="white"></rect>
+</clipPath>
+</defs>
+</svg>

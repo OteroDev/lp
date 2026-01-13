@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" data-inject-url="https://www.infusionpush.com.br.nyousefali.com.br/svg/icon-eye2.svg" class="icon-s icon-white" loading="lazy">
+<path d="M5 27.4996C13.2564 2.83347 43.9231 2.83348 51 27.4996C42.7436 52.1668 14.4359 52.1668 5 27.4996Z" stroke="url(#paint0_linear_323_10--inject-15)" stroke-width="2"></path>
+<path d="M28 20C32.4729 20 36 23.4109 36 27.5C36 31.5891 32.4729 35 28 35C23.5271 35 20 31.5891 20 27.5C20 23.4109 23.5271 20 28 20Z" stroke="url(#paint1_linear_323_10--inject-15)" stroke-width="2"></path>
+<defs>
+<linearGradient id="paint0_linear_323_10--inject-15" x1="28" y1="9" x2="28" y2="46" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_323_10--inject-15" x1="28" y1="19" x2="28" y2="36" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D4DCED"></stop>
+<stop offset="1" stop-color="#797E87"></stop>
+</linearGradient>
+</defs>
+</svg>
