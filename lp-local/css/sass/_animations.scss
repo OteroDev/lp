@@ -25,6 +25,10 @@
 
 .loader{
     animation: loader 4s ease forwards;
+     @include responsive(s){
+        max-width: 152px;
+    }
+
 }
 
 @keyframes loader{

@@ -3825,6 +3825,11 @@ select{
 .loader {
   animation: loader 4s ease forwards;
 }
+@media screen and (max-width: 960px) {
+  .loader {
+    max-width: 152px;
+  }
+}
 
 @keyframes loader {
   0% {
