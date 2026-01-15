@@ -218,6 +218,138 @@
   }
 }
 
+@mixin typeface-3($size, $device: desktop) {
+
+  font-family: "Futurism";
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  @if $size == hbig and $device == desktop {
+    font-size: 80px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == mobile {
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == smallmobile {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  
+  @if $size == h0 and $device == desktop {
+    font-size: 88px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == mobile {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == smallmobile {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+
+  @if $size == h1 and $device == desktop {
+    font-size: 80px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 52px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == smallmobile {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h2 and $device == desktop {
+
+    font-size: 72px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == smallmobile {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h3 and $device == desktop {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == smallmobile {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h4 and $device == desktop {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == smallmobile {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h5 and $device == desktop {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 200;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 200;
+  }
+
+  @else if $size == h6 and $device == desktop {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+
+  @else if $size == h7 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h7 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+
+  @else if $size == h8 and $device == desktop {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 200;
+  } @else if $size == h8 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 200;
+  }
+}
+
 .h0{
   @include typeface-1(h0, desktop);
   letter-spacing: 20px;
@@ -236,19 +368,19 @@
 .h0-title{
   letter-spacing: 18px;
 
-  @include typeface-1(h0, desktop);
-  @include typeface-title();
+  @include typeface-3(h0, desktop);
+  //@include typeface-title();
 
   @include responsive(s) {
     letter-spacing: 4px;
-    @include typeface-1(h0, mobile);
-    @include typeface-title();
+    @include typeface-3(h0, mobile);
+    //@include typeface-title();
   }
 
   @include responsive(xs) {
     letter-spacing: 1px;
-    @include typeface-1(h0, smallmobile);
-    @include typeface-title();
+    @include typeface-3(h0, smallmobile);
+    //@include typeface-title();
   }
 
 }

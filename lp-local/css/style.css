@@ -1436,42 +1436,33 @@ footer {
 
 .h0-title {
   letter-spacing: 18px;
-  font-family: "Gabarito", sans-serif;
+  font-family: "Futurism";
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 88px;
   line-height: 120%;
   font-weight: 300;
-  font-family: "Nebula", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 @media screen and (max-width: 960px) {
   .h0-title {
     letter-spacing: 4px;
-    font-family: "Gabarito", sans-serif;
+    font-family: "Futurism";
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 40px;
     line-height: 120%;
     font-weight: 300;
-    font-family: "Nebula", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
   }
 }
 @media screen and (max-width: 340px) {
   .h0-title {
     letter-spacing: 1px;
-    font-family: "Gabarito", sans-serif;
+    font-family: "Futurism";
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 24px;
     line-height: 120%;
     font-weight: 300;
-    font-family: "Nebula", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
   }
 }
 
